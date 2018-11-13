@@ -1,0 +1,49 @@
+html, body {
+    max-height: 100%;
+    max-width: 100%;
+}
+body {
+    background-image: url(../pildid/taust.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+@media (min-width: 2046px), (min-height: 1535px) {
+    body { background-size: auto; }
+}
+
+.row {
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    position: center;
+}
+
+/* Clearfix (clear floats) */
+.column1 {
+    left: 15%;
+    right: 65%;
+    padding: 20px;
+    position: fixed;
+    display: inline;
+    background: rgba(255, 204, 230, 0.4)
+;
+    border-radius: 15px
+}
+.column2:hover {
+    background: rgba(255, 204, 230, 0.8);
+}
+
+.column1:hover {
+    background: rgba(255, 204, 230, 0.8);
+}
+
+.column2 {
+    right: 15%;
+    left: 65%;
+    padding: 20px;
+    position: fixed;
+    display: inline;
+    background: rgba(255, 204, 230, 0.4);
+    border-radius: 15px
+}
