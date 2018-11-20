@@ -1,0 +1,90 @@
+.nupp {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%; 
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #666;
+}
+
+.content {
+    padding: 19px;
+    display: none;
+    background-color: #f1f1f1;
+}
+
+img.clipped {
+    width: 100%;
+}
+
+.header {
+    padding: 10px;
+}
+
+.retsept {
+    width: 60%; /* retsepti laius terve lehe suhtes */
+    margin-left: auto;
+    margin-right: auto; /* toome retseptid lehe keskele, 'auto' kummaltki poolt teeb nii, et mõlemal pool on sama palju tühja ruumi*/
+}
+
+.pealkiri {
+    text-align: center;
+}
+
+.pildid {
+    max-height: 250px; /* pildi maksimaalne kõrgus */
+    overflow: hidden; /* see, mis ületab 250px, peidetakse */
+    width: 80%; 
+    margin: 0 auto; /* keskele */
+}
+
+.pildid img {
+    width: 100%;
+}
+
+.nupu-sisu {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.koostisosad, .valmistamine {
+    font-weight: bold;
+}
+
+.viited {
+    text-align: center;
+    padding: 8px;
+    background: #777;
+    margin: auto;
+    margin-top: 10px;
+    width: 47%;
+}
+
+.retsept a {
+    color:black;
+    font-style: italic;
+}
+
+.viited a {
+    color:white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

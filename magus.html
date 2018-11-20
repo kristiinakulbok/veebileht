@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vaheleht1</title>
+	<title>Magustoidud</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Näljase tudengi retseptivihik</title>
 	<link rel="shortcut icon" type="image/x-icon" href="ramen.ico"/>
-	<link rel="stylesheet" href="styles.css">
+	<link href="css/style(magus).css" rel="stylesheet"/>
 </head>
-<body>
-	<nav class="navigatsioon">
-		<a href="./veebileht.html">Avaleht</a>
-		<a href="./vaheleht1.html">Vaheleht1</a>
-		<a href="./vaheleht2.html">Vaheleht2</a>
-	</nav>
-	<img src="https://www.popsci.com/sites/popsci.com/files/styles/opengraph_1_91x1/public/import/2014/tumbleweed%20dry.jpg?itok=jX-nfPiL" style="width:400px;height:270px;">
+
+
+<body id="magustoidud">
+	<div class="header">
+		<img src="pildid/header.jpg" class="clipped"/>
+	</div>
+
+
+
+	<div class="retsept"> <!-- retsept tervikuna ja selle osad on selle div'i sisse mässitud -->
+		<div class="pealkiri">
+			<h3>Plaadikook marjadega</h3>
+		</div>
+		<div class="pildid">
+			<img src="https://www.dansukker.com/files/Billeder/recipe_large/berry_cake_roasting_pan.jpg">
+		</div>
+		<div class="nupu-sisu"> <!-- -Loe edasi' nupp ja selle all olev sisu -->
+			<div class="nupp">
+				<button class="collapsible">Loe edasi...</button>	
+			</div>
+			<div class="content">
+				<p class="koostisosad">Koostisained:</p>
+				4 muna<br>
+				450 g Dansukkeri rafineerimata roosuhkrut<br>
+				270 dl nisujahu<br>
+				20 g Dansukkeri vanillisuhkrut<br>
+				10 g küpsetuspulbrit<br>
+				500 g marju, nt. vaarikaid, mustikaid, punaseid sõstraid või murakaid<br>
+				200 g võid<br>
+				<p class="valmistamine">Valmistamine:</p>
+				Vahustage munad suhkruga heledaks vahuks. Segage omavahel jahu, vanillisuhkur ning küpsetuspulber ja lisage õrnalt segades munavahule. Valage taigen rasvainega määritud ja jahuga ülepuistatud 30 x 40 cm ahjupannile. Puistake marjad taignale. Lõigake või õhukesteks viiludeks (nt. juustunoa abil) ja laduge viilud marjadele. Küpsetage ahju keskmisel siinil 175°C kraadi juures u. 45 minutit. Laske jahtuda. Lõigake kook ruutudeks ja puistake serveerimisel üle tuhksuhkruga.
+				<p><a href="https://www.dansukker.com/ee/retseptid/plaadikook-marjadega.aspx">Allikas</a>
+				</p>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<div class="retsept">
+		<div class="pealkiri">
+			<h3>Plaadikook marjadega</h3>
+		</div>
+		<div class="pildid">
+			<img src="https://www.dansukker.com/files/Billeder/recipe_large/berry_cake_roasting_pan.jpg">
+		</div>
+		<div class="nupu-sisu">
+			<div class="nupp">
+				<button class="collapsible">Loe edasi...</button>
+			</div>			
+			<div class="content">
+				<p class="koostisosad">Koostisained:</p>
+				4 muna<br>
+				450 g Dansukkeri rafineerimata roosuhkrut<br>
+				270 dl nisujahu<br>
+				20 g Dansukkeri vanillisuhkrut<br>
+				10 g küpsetuspulbrit<br>
+				500 g marju, nt. vaarikaid, mustikaid, punaseid sõstraid või murakaid<br>
+				200 g võid<br>
+				<p class="valmistamine">Valmistamine:</p>
+				Vahustage munad suhkruga heledaks vahuks. Segage omavahel jahu, vanillisuhkur ning küpsetuspulber ja lisage õrnalt segades munavahule. Valage taigen rasvainega määritud ja jahuga ülepuistatud 30 x 40 cm ahjupannile. Puistake marjad taignale. Lõigake või õhukesteks viiludeks (nt. juustunoa abil) ja laduge viilud marjadele. Küpsetage ahju keskmisel siinil 175°C kraadi juures u. 45 minutit. Laske jahtuda. Lõigake kook ruutudeks ja puistake serveerimisel üle tuhksuhkruga.
+				<p><a href="https://www.dansukker.com/ee/retseptid/plaadikook-marjadega.aspx">Allikas</a>
+				</p>
+			</div>			
+		</div>
+	</div>
+
+	<div class="viited">
+		<a href="viited.html">Viited</a>
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.parentNode.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
+
 </body>
 </html>

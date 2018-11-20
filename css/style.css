@@ -26,8 +26,7 @@ body {
     padding: 20px;
     position: fixed;
     display: inline;
-    background: rgba(255, 204, 230, 0.4)
-;
+    background: rgba(255, 204, 230, 0.4);
     border-radius: 15px
 }
 .column2:hover {
