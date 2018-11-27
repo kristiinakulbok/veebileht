@@ -1,0 +1,25 @@
+body {
+    background-image: url(../pildid/taust_viited.jpg);
+}
+
+.viide a {
+	color: black;
+    font-style: italic;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.viide {
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+}
+
+.pealkiri {
+	text-align: center;
+}
+	

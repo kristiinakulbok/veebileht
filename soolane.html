@@ -4,13 +4,92 @@
 	<title>Soolased toidud</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/x-icon" href="ramen.ico"/>
-	<link rel="stylesheet" href="style.css">
+	<link href="css/style(magus).css" rel="stylesheet"/>
 </head>
-<body>
-	<nav class="navigatsioon">
-		<a href="./index.html">Avaleht</a>
-		<a href="./magus.html">Magustoidud</a>
-		<a href="./soolane.html">Soolased toidud</a>
-	</nav>
+
+
+<body id="soolased toidud">
+	<div class="header">
+		<img src="pildid/header_soolane.jpg" class="clipped"/>
+	</div>
+
+
+
+	<div class="retsept"> <!-- retsept tervikuna ja selle osad on selle div'i sisse mässitud -->
+		<div class="pealkiri">
+			<h3>Koorene tomatipasta parmesani, küüslaugu ja basiilikuga 2-le</h3>
+		</div>
+		<div class="pildid">
+			<img src="http://tartumill.ee/tm/wp-content/uploads/2014/09/pastaretsept_01.jpg">
+		</div>
+		<div class="nupu-sisu"> <!-- -Loe edasi' nupp ja selle all olev sisu -->
+			<div class="nupp">
+				<button class="collapsible">Loe edasi...</button>	
+			</div>
+			<div class="content">
+				<p class="koostisosad">Koostisained:</p>
+				200 g spagette<br>
+				500 g tomatit<br>
+				2-3 küüslauguküünt<br>
+				200 ml vahukoort<br>
+				oksake värsket rosmariini<br>
+				30-40 g parmesani juustu<br>
+				soola, pipart<br>
+				värsket basiilikut<br>
+				oliiviõli<br>
+				<p class="valmistamine">Valmistamine:</p>
+				Lase potis umbes liiter vett keema tõusta ja pista tomatid minutiks kuuma vette. Võta tomatid veest välja, koori ära ja lõika kuubikuteks. Keeda spagetid 2 liitris soolaga maitsestatud vees al denteks. Samal ajal kui spagetid keevad, kuumuta pannil oliiviõli ja prae tomatid küüslaugu ja rosmariiniga kergelt läbi. Lisa vahukoor ja riivitud parmesan. Lase vedelikul poole võrra kahaneda. Lisa kastmele spagetid ning puruks rebitud basiilik. Sega kõik korralikult läbi, kuumuta minutike ja maitsesta vajadusel soolaga. Serveeri pasta värskelt jahvatatud pipra ja parmesanilaastudega.
+				<p><a href="http://tartumill.ee/et/retseptid/koorene-tomatipasta-parmesani-kuuslaugu-ja-basiilikuga-2-le/">Allikas</a>
+				</p>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<div class="retsept">
+		<div class="pealkiri">
+			<h3>Soolase pealkiri</h3>
+		</div>
+		<div class="pildid">
+			<img src="https://www.dansukker.com/files/Billeder/recipe_large/berry_cake_roasting_pan.jpg">
+		</div>
+		<div class="nupu-sisu">
+			<div class="nupp">
+				<button class="collapsible">Loe edasi...</button>
+			</div>			
+			<div class="content">
+				<p class="koostisosad">Koostisained:</p>
+				4 muna<br>
+				450 g Dansukkeri rafineerimata roosuhkrut<br>
+				<p class="valmistamine">Valmistamine:</p>
+				Juhend
+				<p><a href="https://www.dansukker.com/ee/retseptid/plaadikook-marjadega.aspx">Allikas</a>
+				</p>
+			</div>			
+		</div>
+	</div>
+
+	<div class="viited">
+		<a href="viited.html">Viited</a>
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.parentNode.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
+
 </body>
 </html>
