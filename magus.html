@@ -3,7 +3,7 @@
 <head>
 	<title>Magustoidud</title>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" type="image/x-icon" href="ramen.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="ramen-256.png"/>
 	<link href="css/style(magus, soolane).css" rel="stylesheet"/>
 </head>
 
@@ -313,22 +313,7 @@
 		<a href="viited.html">Viited</a>
 	</div>
 
-	<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.parentNode.nextElementSibling;
-				if (content.style.display === "block") {
-					content.style.display = "none";
-				} else {
-					content.style.display = "block";
-				}
-			});
-		}
-	</script>
+	<script src="js.js"></script>
 
 </body>
 </html>
