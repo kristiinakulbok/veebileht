@@ -17,7 +17,6 @@ body {
     position: fixed;
     top: 35%;
     left: 35%;
-    position: center;
 }
 
 /* Clearfix (clear floats) */
@@ -46,4 +45,12 @@ body {
     display: inline;
     background: rgba(255, 204, 230, 0.4);
     border-radius: 15px
+}
+
+.column1 img {
+    width: 100%;
+}
+
+.column2 img {
+    width: 100%;
 }
